@@ -29,5 +29,4 @@ public class Constructors {
         human2.eat();
         human1.drink();
     }
-    
 }
