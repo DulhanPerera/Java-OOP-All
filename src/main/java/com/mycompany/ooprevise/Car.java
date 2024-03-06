@@ -23,4 +23,9 @@ public class Car {
     void brake(){
         System.out.println("You step on the brake!");
     }
+    
+    @Override
+    public String toString(){
+        return make+"\t"+model+"\t"+year+"\t"+color;
+    }
 }
