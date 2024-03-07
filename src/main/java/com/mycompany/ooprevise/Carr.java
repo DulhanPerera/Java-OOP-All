@@ -18,6 +18,10 @@ public class Carr {
 		this.setYear(year);
 	}
 	
+	Carr(Carr x){
+		this.copy(x);
+	}
+	
 	public String getMake() {
 		return this.make;
 	}
@@ -40,5 +44,11 @@ public class Carr {
 	
 	public void setYear(int year) {
 		this.year = year;
+	}
+	
+	public void copy(Carr x) {
+		this.setMake(x.getMake());
+		this.setModel(x.getModel());
+		this.setYear(x.getYear());
 	}
 }
